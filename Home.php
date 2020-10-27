@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <?php
+        if(isset($_POST["sendmail"])) {
+            mail("lferreira72002@gmail.com", "New job notification", $_POST["message"]);
+            echo("mail sent");
+        }
+    ?>
+
+    <head>
+        <title>Lucas Ferreira</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-custom">
+                <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#2">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#3">Featured Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#4">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-min100 mt-3" id="1">
+            <div class="row">
+                <div class="col">
+                    <h1  class="display-2 text-center fade">Hi. I'm <span style="color: #319966">Lucas</span>,</h1>
+                    <h2 class="text-center text-sm-nowrap fade">a web designer and developer based in Brisbane, Australia. </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-2">
+                        <img src="Asset 1.png" class="img-fluid mx-auto d-block fade">
+                </div>
+            </div>
+            <div class="d-sm-block">
+                <a href="#2">
+                <div class="scrolldown"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="padding-top: 2vh; background: white" id="2">
+            <div class="container" style="padding-top: 2vh; background: white">
+                <h1 class="display-5 text-center fade" style="margin-top: 5vh; color: #1A234C" id="2">About</h1>
+                <p class="text-center fade"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur congue volutpat. Sed at justo et nisi sagittis scelerisque quis at nisl. Phasellus non suscipit ex. 
+Duis ut ultrices justo.</p>
+                <div class="row fade">
+                    <div class="col-sm">
+                        <img src="code.svg" class="img-fluid mx-auto d-block mt-1" style="width: 25vh">
+                        <h2 class="text-center text-sm-nowrap" style="color: #1A234C">Dvelopment languages</h2>
+                            <ul class="list-group text-center mx-auto mt-3">
+                                <li class="list-group-item border-0">HTML</li>
+                                <li class="list-group-item border-0">CSS</li>
+                                <li class="list-group-item border-0">Bootstrap</li>
+                                <li class="list-group-item border-0">PHP</li>
+                                <li class="list-group-item border-0">SQL</li>
+                                <li class="list-group-item border-0">Python</li>
+                                <li class="list-group-item border-0">Javascript</li>
+                            </ul>
+                    </div>
+                    <div class="col-sm">
+                        <img src="Design.svg" class="img-fluid mx-auto d-block mt-5 mt-md-0" style="width: 25vh">
+                        <h2 class="text-center text-sm-nowrap" style="color: #1A234C">Design tools</h2>
+                        <ul class=" list-group text-center mx-auto mt-3">
+                            <li class="list-group-item border-0">Adobe XD</li>
+                            <li class="list-group-item border-0">Adobe Photoshop</li>
+                            <li class="list-group-item border-0">Adobe Illustrator</li>
+                            <li class="list-group-item border-0">Adobe After Effects</li>
+                        </ul>
+                    </div>
+                </div>
+            <h1 class="display-5 text-center mt-5 pt-3 fade" id="3" style="color: #1A234C">Recent Work</h1>
+                <div class="row pb-5">
+                    <div class="col-sm-4 my-auto">
+                        <h2 class="display-5 text-center text-md-left mt-5 fade" style="color: #1A234C">Pet Sitting Project</h1>
+                        <p class="text-center text-md-left mt-2 fade"> This project involved both the initial concept design and development of a smooth and interactive user-friendly
+website. The project required a clean minimalistic design that incorporated powerful back-end code to give the user just what they were searching for. </p>
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="PetstayExample.PNG" class="img-fluid mx-auto d-block mt-5 fade">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container mt-2 pt-5" id="4">
+    <h2 class="text-center text-sm-nowrap">Contact</h2>
+    <h4 class="text-center mb-5 mt-3" style="color: white"> Have a question or want to work together?</h4>
+        <form method="post" action="Home.php">
+            <div class="form-group row">
+                <div class="col-sm-8 mx-auto">
+                    <input name="name" style="background-color: #161D40; border: none;" type="text" class="form-control" id="inputname" placeholder="Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-8 mx-auto">
+                    <input name="email" style="background-color: #161D40; border: none;" type="email"class="form-control" id="inputemail" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-8 mx-auto">
+                    <textarea name="message" style="background-color: #161D40; border: none;" class="form-control" rows="6" placeholder="Message"></textarea>
+                </div>
+            </div>
+                <div class="col-sm text-center mb-5">
+            <button name="sendmail" value="sendmail" type="submit" class="btn btn-lg btn-primary-outline text-white mt-4 text-center">Send</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="observer.js"></script>
+    </body>
