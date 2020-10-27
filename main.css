@@ -1,0 +1,159 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yu Gothic';
+    font-weight: 400;
+    background-color: #1A234C;
+    overflow-x: hidden;
+}
+
+.container-min100 {
+    min-height: 100vh;
+    position: relative;
+}
+
+.container-fluid {
+    min-height: 100vh;
+}
+
+.container .white {
+    background-color: white;
+}
+
+.navbar-custom{
+    margin-top: 1vh;
+    background-color:#1A234C;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    margin-left: 1vw;
+    margin-top: 0.25vw;
+}
+
+p {
+    font-weight: 400 ;
+    color: black;
+}
+
+.display-1 {
+    color: white;
+    font-weight: 700;
+}
+.display-2 {
+    color: white;
+    font-weight: 700;
+}
+.display-3 {
+    color: white;
+    font-weight: 700;
+}
+
+.display-4 {
+    color: white;
+    font-weight: 700;
+}
+
+.display-5 {
+    color: white;
+    font-weight: 700;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+}
+
+h2 {
+    color: white;
+    font-weight: 700;
+}
+
+
+.text-justify {
+    text-align: justify;
+}
+
+.scroll-margin {
+    margin-top: 2vh;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+.lable {
+    color: white;
+}
+
+.btn-primary-outline {
+    background-color: transparent;
+    border-color: #ccc;
+  }
+
+.scrolldown {
+    height: 50px;
+    width: 30px;
+    border: 2px solid white;
+    position: relative;
+    border-radius: 50px;
+    cursor: pointer;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: -10vh;
+}
+
+.scrolldown::before,
+.scrolldown::after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid white;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scrolldown 1s ease-in-out infinite;
+}
+
+.scrolldown::after{
+    top:30%;
+    animation-delay: .35s;
+}
+
+@keyframes scrolldown{
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        top: 90%;
+    }
+}
+
+
+.fade {
+    opacity: 0;
+    transition: opacity 450ms ease-in;
+}
+
+.fade.appear {
+    opacity: 1;
+}
