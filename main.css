@@ -21,7 +21,7 @@ body{
 
 .container-fluid {
     min-height: 100vh;
-    min-wdith: 100vw;
+    min-wdith: 100%;
 }
 
 .container .white {
