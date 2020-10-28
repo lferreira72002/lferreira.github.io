@@ -9,6 +9,7 @@ body{
     font-weight: 400;
     background-color: #1A234C;
     overflow-x: hidden;
+    position: relative;
 }
 
 .container-min100 {
