@@ -8,7 +8,8 @@ body{
     font-family: 'Yu Gothic';
     font-weight: 400;
     background-color: #1A234C;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    max-width: 100% !important;
     ovefflow-y: auto;
     position: relative;
 }
