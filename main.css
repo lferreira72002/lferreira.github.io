@@ -10,7 +10,7 @@ body{
     background-color: #1A234C;
     overflow-x: hidden !important;
     max-width: 100% !important;
-    ovefflow-y: auto;
+    overflow-y: auto;
     position: relative;
 }
 
@@ -19,9 +19,13 @@ body{
     position: relative;
 }
 
+.container-wmin100 {
+    min-width: 100vw;
+}
+
 .container-fluid {
     min-height: 100vh;
-    min-wdith: 100%;
+    min-width: 100vw;
 }
 
 .container .white {
